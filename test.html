@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes swiped {
+            0% {
+                transform: translateX(0);
+                width: 80vw;
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(-40vw);
+                width: 10vw;
+                opacity: 0;
+            }
+        }
+
+        @keyframes swipe {
+            0% {
+                transform: translateX(0);
+                width: 80vw;
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(-80vw);
+                width: 80vw;
+                opacity: 1;
+            }
+        }
+
+        .parent-div {
+            display: grid;
+            grid-template-columns: 100vw 100vw;
+            justify-items: center;
+            /* width: 200vw; */
+        }
+
+        .parent-div>div {
+            width: 80vw;
+            height: 50vh;
+        }
+
+        .child-div1 {
+            background-color: blue;
+        }
+
+        .child-div2 {
+            background-color: red;
+        }
+
+        .swiped {
+            animation: swiped .5s linear infinite both;
+        }
+
+        .swipe {
+            animation: swipe .5s linear .3s infinite both;
+        }
+
+        .no-animation {
+            animation: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" placeholder="whatever" class="input">
+        <input type="submit" value="Submit">
+        <p></p>
+    </form>
+
+    <div class="parent-div">
+        <div class="child-div1 no-animation"></div>
+        <div class="child-div2 no-animation"></div>
+    </div>
+</body>
+
+<script>
+    const form = document.querySelector("form")
+    const input = document.querySelector(".input")
+    const p = document.querySelector("p")
+    form.addEventListener("submit", e => {
+        e.preventDefault()
+        let value = input.value
+        if (value.includes("/") || !(value.includes("@"))) {
+            p.innerText = "Invalid"
+        } else {
+            p.innerText = ""
+        }
+    })
+
+    const children_arr = Array.from(document.querySelector(".parent-div").children)
+    let index = 0
+
+    setInterval(handler, 2000)
+
+    function handler() {
+        if (index > 1) index = 0
+        index = index + 1
+        children_arr[index].classList.remove("no-animation")
+    }
+
+    children_arr[index].classList.add("no-animation")
+</script>
+
+</html>

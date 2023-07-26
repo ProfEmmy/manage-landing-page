@@ -37,3 +37,32 @@ close_icon.addEventListener("click", () => {
     menu_icon.classList.remove("display")
     close_icon.classList.add("display")
 })
+
+overlay.addEventListener("click", () => {
+    overlay.classList.add("display")
+    nav.classList.add("remove-nav-div")
+    nav_div.classList.add("remove-nav")
+    menu_icon.classList.remove("display")
+    close_icon.classList.add("display")
+})
+
+
+const subscribe_form = document.querySelector("#subscribe-form")
+const email_field = document.querySelector(".email-field")
+const error_p = document.querySelector(".error_p")
+
+subscribe_form.addEventListener("submit", e => {
+    e.preventDefault()
+
+    let value = email_field.value
+    if (value.includes("/") || !(value.includes("@")) || !(value.includes("."))) {
+        email_field.classList.add("error")
+        error_p.style.display = "block"
+        error_p.innerText = "Please insert a valid email"
+    } else {
+        email_field.classList.remove("error")
+        error_p.innerText = ""
+        email_field.value = ""
+        error_p.style.display = "none"
+    }
+})

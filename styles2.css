@@ -48,6 +48,28 @@
     }
 }
 
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-110%);
+    }
+
+    50% {
+        transform: translateX(-220%);
+    }
+
+    75% {
+        transform: translateX(-330%);
+    }
+
+    100% {
+        transform: translateX(-440%);
+    }
+}
+
 .desktop-div {
     display: none;
 }
@@ -55,6 +77,7 @@
 body {
     margin: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 .mobile-nav {
@@ -159,10 +182,14 @@ body {
 
 .navigator>a {
     color: hsl(228, 39%, 23%);
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
     font-weight: 700;
     margin-top: 20%;
+}
+
+.navigator>.pricing {
+    margin-top: -10%;
 }
 
 .display {
@@ -216,11 +243,193 @@ body {
     color: hsl(228, 39%, 23%);
     margin-top: 10px;
     margin-left: 5vw;
+    font-size: 1.08em;
 }
 
 .about-subtxt {
     margin-left: 5vw;
     color: hsl(227, 12%, 61%);
     line-height: 27px;
-    font-size: .97em;
+    font-size: .95em;
+}
+
+.testimonials-heading {
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-size: 2.2em;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100% 100%;
+    justify-items: center;
+}
+
+.mobile-testimony {
+    width: 90%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.avatar-img {
+    width: 27%;
+    height: 25%;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+}
+
+.thetestimony {
+    color: hsl(227, 12%, 61%);
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 24px;
+}
+
+.slide {
+    animation: slide 10s infinite both;
+}
+
+.markers-div {
+    display: flex;
+    justify-content: center;
+}
+
+.markers {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marker {
+    border: 1.9px solid hsl(12, 88%, 59%);
+    border-radius: 50%;
+    width: 3vw;
+    height: 1.3vh;
+    margin-right: 10%;
+}
+
+.active-marker {
+    background-color: hsl(12, 88%, 59%);
+}
+
+.get-startedbtn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.simplify-section {
+    background-color: hsl(12, 88%, 59%);
+    background-image: url("images\\bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.simplify-div {
+    text-align: center;
+}
+
+.simplify-heading {
+    color: #ffffff;
+    font-size: 2.2em;
+}
+
+.simplify-get-started {
+    background-color: #ffffff;
+    width: 45%;
+    height: 6vh;
+    border: 0;
+    border-radius: 50px;
+    color: hsl(12, 88%, 59%);
+    font-weight: 700;
+}
+
+.mobile-footer {
+    height: 80vh;
+    width: 100%;
+    background-color: hsl(233, 12%, 13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-field {
+    width: 62vw;
+    height: 7vh;
+    border-radius: 50px;
+    padding-left: 20px;
+    border: 0;
+}
+
+.go {
+    background-color: hsl(12, 88%, 59%);
+    color: #ffffff;
+    width: 15vw;
+    height: 7vh;
+    border: 0px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.sitemaps {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+}
+
+.sitemap>a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 20%;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    height: 7vh;
+    width: 90vw;
+    padding-top: 5vh;
+}
+
+.socials>a>img {
+    width: 7vw;
+}
+
+.footer-logo-div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.mobile-copyright {
+    text-align: center;
+    font-size: .9em;
+    color: hsl(227, 12%, 61%);
 }
