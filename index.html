@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" media="screen and (min-width: 1000px)">
+  <link rel="stylesheet" href="styles2.css" media="screen and (max-width: 1000px)">
+
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <script src="script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="desktop-div">
+    <nav class="desktop-nav">
+      <div class="nav-div">
+        <div class="navs-div">
+          <div class="logo-div">
+            <img src="images\logo.svg" alt="logo">
+          </div>
+          <div class="navs">
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+          </div>
+          <div class="getstarted-div">
+            <button class="get-started">Get Started</button>
+          </div>
+        </div>
+        <div class="hero-div">
+          <div class="hero-txt-div">
+            <h1 class="hero-txt">Bring everyone<br>together to build<br>better products.<br></h1>
+            <p class="hero-subtxt">Manage makes it simple for software teams<br>to plan day-to-day
+              tasks while keeping the<br>larger team goals in view.<br></p>
+            <button class="get-started">Get Started</button>
+          </div>
+          <div class="hero-img-div">
+            <img src="images\illustration-intro.svg" alt="illustration-intro" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-testimonial-section">
+        <div class="about-section">
+          <div class="about-div">
+            <div class="about-hero-txtdiv">
+              <h1 class="about-hero-txt">What’s different about<br>Manage?</h1>
+              <p class="about-hero-subtxt">Manage provides all the functionality your<br>team needs, without
+                the complexity. Our<br>software is tailor-made for modern digital<br>
+                product teams.<br></p>
+            </div>
+
+            <div class="about">
+              <div class="about-txts-div txt-div1">
+                <div class="about-no-div">
+                  <p class="about-no">01</p>
+                </div>
+                <div class="about-txt-div">
+                  <h2 class="about-txt">Track company-wide progress</h2>
+                  <p class="about-subtxt">See how your day-to-day tasks fit into the wider vision.<br>Go from
+                    tracking progress at the milestone level all the<br>way done to the
+                    smallest of details. Never lose sight of<br>the bigger picture again.<br></p>
+                </div>
+              </div>
+
+              <div class="about-txts-div">
+                <div class="about-no-div">
+                  <p class="about-no">02</p>
+                </div>
+                <div class="about-txt-div">
+                  <h2 class="about-txt">Advanced built-in reports</h2>
+                  <p class="about-subtxt">Set internal delivery estimates and track progress toward<br>company
+                    goals. Our customisable dashboard helps you<br>build out the reports
+                    you need to keep key stakeholders<br>informed.<br>
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-txts-div">
+                <div class="about-no-div">
+                  <p class="about-no">03</p>
+                </div>
+                <div class="about-txt-div everything">
+                  <h2 class="about-txt">Everything you need in one place</h2>
+                  <p class="about-subtxt">Stop jumping from one service to another to<br>communicate, store files,
+                    track tasks and share<br>documents. Manage offers an all-in-one team<br>
+                    productivity solution.<br></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-section">
+          <div class="testimonials-div">
+            <h1 class="testimonials-heading">What they’ve said</h1>
+            <div class="testimonials">
+              <div class="testimony first-testimony">
+                <img src="images\avatar-anisha.png" alt="avatar-anisha" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Anisha Li</p>
+                    <p class="thetestimony">“Manage has supercharged our team’s workflow. The<br>ability to maintain
+                      visibility on larger milestones at all times<br>keeps everyone motivated.”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony second-testimony">
+                <img src="images\avatar-ali.png" alt="avatar-shanai" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Ali Bravo</p>
+                    <p class="thetestimony">“We have been able to cancel so many other subscriptions<br>since using
+                      Manage. There is no more cross-channel<br>confusion and everyone is much
+                      more focused.”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony third-testimony">
+                <img src="images\avatar-richard.png" alt="avatar-richard" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Richard Watts</p>
+                    <p class="thetestimony">“Manage allows us to provide structure and process.<br>It keeps us organized
+                      and focused. I can’t stop recommending<bdo>them to everyone I talk to!”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony fourth-testimony">
+                <img src="images\avatar-shanai.png" alt="avatar-shanai" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Shanai Goughs</p>
+                    <p class="thetestimony">“Their software allows us to track, manage and collaborate on our projects
+                      from anywhere. It keeps the whole team in-sync without being intrusive.”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony first-testimony2">
+                <img src="images\avatar-anisha.png" alt="avatar-anisha" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Anisha Li</p>
+                    <p class="thetestimony">“Manage has supercharged our team’s workflow. The<br>ability to maintain
+                      visibility on larger milestones at all times<br>keeps everyone motivated.”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony second-testimony2">
+                <img src="images\avatar-ali.png" alt="avatar-shanai" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Ali Bravo</p>
+                    <p class="thetestimony">“We have been able to cancel so many other subscriptions<br>since using
+                      Manage. There is no more cross-channel<br>confusion and everyone is much
+                      more focused.”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony third-testimony2">
+                <img src="images\avatar-richard.png" alt="avatar-richard" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Richard Watts</p>
+                    <p class="thetestimony">“Manage allows us to provide structure and process.<br>It keeps us organized
+                      and focused. I can’t stop recommending<bdo>them to everyone I talk to!”<br></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimony fourth-testimony2">
+                <img src="images\avatar-shanai.png" alt="avatar-shanai" class="avatar-img">
+                <div class="testimony-name">
+                  <div class="testimony-name-div">
+                    <p class="name">Shanai Goughs</p>
+                    <p class="thetestimony">“Their software allows us to track, manage and collaborate on our projects
+                      from anywhere. It keeps the whole team in-sync without being intrusive.”<br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overlays-div">
+              <div class="testmonials-overlay left-overlay"></div>
+              <div class="testmonials-overlay right-overlay"></div>
+            </div>
+            <a href="#"><button class="get-started-btn">Get Started</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="simplify-section">
+        <div class="simplify-div">
+          <h1 class="simplify-txt">Simplify how your team<br>works today.<br></h1>
+          <div class="simplify-btn-div">
+            <a href="#"><button class="simplify-btn">Get Started</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-div">
+        <div class="logo-socials-div">
+          <img src="images\logo.svg" alt="logo" class="footer-logo">
+          <div class="socials">
+            <img src="images\icon-facebook.svg" alt="icon-facebook">
+            <img src="images\icon-youtube.svg" alt="icon-youtube">
+            <img src="images\icon-twitter.svg" alt="icon-twitter">
+            <img src="images\icon-pinterest.svg" alt="icon-pinterest">
+            <img src="images\icon-instagram.svg" alt="icon-instagram">
+          </div>
+        </div>
+        <div class="sitemap">
+          <a href="#" class="first-one">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+        <div class="sitemap">
+          <a href="#" class="first-one">Careers</a>
+          <a href="#">Community</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="subscribe-div">
+          <form id="subscribe-form">
+            <input type="text" id="email-field" placeholder="Updates in your inbox…">
+            <button type="submit" id="go">Go</button>
+          </form>
+          <p class="copyright">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="mobile-div">
+    <nav class="mobile-nav">
+      <div class="overlay display"></div>
+      <div class="navigator-div remove-nav-div">
+        <div class="navigator remove-nav">
+          <a href=" #">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+
+      <div class="nav-div">
+        <div class="navdiv">
+          <img src="images\logo.svg" alt="logo" class="logo">
+          <img src="images\icon-hamburger.svg" alt="icon-hamburger" class="menu-icon">
+          <img src="images\icon-close.svg" alt="icon-close" class="display close_icon">
+        </div>
+        <div class="hero-div">
+          <div class="hero-img-div">
+            <img src="images\illustration-intro.svg" alt="illustration-intro" class="hero-img">
+          </div>
+          <div class="hero-txt-div">
+            <h1 class="hero-txt">Bring everyone<br>together to build<br>better products.<br></h1>
+            <p class="hero-subtxt">Manage makes it simple for software<br>teams to plan day-to-day
+              tasks while<br>keeping the larger team goals in view.</p>
+            <div class="get-started-div">
+              <button class="get-started-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="about-section">
+      <div class="about-hero-div">
+        <h1 class="about-hero-txt">What’s different<br>about Manage?</h1>
+        <p class="about-hero-subtxt">Manage provides all the functionality your<br>team needs, without
+          the complexity. Our<br>software is tailor-made for modern digital<br>
+          product teams.<br></p>
+      </div>
+
+      <div class="about-div">
+        <div class="about">
+          <div class="about-txts-div">
+            <div class="about-id">01</div>
+            <h3 class="about-txt">Track company-wide progress</h3>
+          </div>
+          <p class="about-subtxt">See how your day-to-day tasks fit into the wider<br>vision. Go from
+            tracking progress at the milestone<br>level all the way done to the
+            smallest of details.<br>Never lose sight of the bigger picture again.<br></p>
+        </div>
+
+        <div class="about">
+          <div class="about-txts-div">
+            <div class="about-id">02</div>
+            <h3 class="about-txt">Advanced built-in reports</h3>
+          </div>
+          <p class="about-subtxt">Set internal delivery estimates and track progress<br>toward company
+            goals. Our customisable<br>dashboard helps you build out the reports
+            you<br>need to keep key stakeholders informed.<br></p>
+        </div>
+
+        <div class="about">
+          <div class="about-txts-div">
+            <div class="about-id">03</div>
+            <h3 class="about-txt">Everything you need in one place</h3>
+          </div>
+          <p class="about-subtxt">Stop jumping from one service to another to<br>communicate, store files,
+            track tasks and share<br>documents. Manage offers an all-in-one team<br>
+            productivity solution.<br></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
+
+
+<!-- Pricing
+Product
+About Us
+Careers
+Community
+
+Get Started
+
+Bring everyone together to build better products.
+
+Manage makes it simple for software teams to plan day-to-day 
+tasks while keeping the larger team goals in view.
+
+Get Started
+
+What’s different about Manage?
+
+Manage provides all the functionality your team needs, without 
+the complexity. Our software is tailor-made for modern digital 
+product teams. 
+
+01
+Track company-wide progress
+See how your day-to-day tasks fit into the wider vision. Go from 
+tracking progress at the milestone level all the way done to the 
+smallest of details. Never lose sight of the bigger picture again.
+
+02
+Advanced built-in reports
+Set internal delivery estimates and track progress toward company 
+goals. Our customisable dashboard helps you build out the reports 
+you need to keep key stakeholders informed.
+
+03
+Everything you need in one place
+Stop jumping from one service to another to communicate, store files, 
+track tasks and share documents. Manage offers an all-in-one team 
+productivity solution.
+
+What they’ve said
+
+Anisha Li
+“Manage has supercharged our team’s workflow. The ability to maintain 
+visibility on larger milestones at all times keeps everyone motivated.”
+
+Ali Bravo
+“We have been able to cancel so many other subscriptions since using 
+Manage. There is no more cross-channel confusion and everyone is much 
+more focused.”
+
+Richard Watts
+“Manage allows us to provide structure and process. It keeps us organized 
+and focused. I can’t stop recommending them to everyone I talk to!”
+
+Shanai Gough
+“Their software allows us to track, manage and collaborate on our projects 
+from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+Get Started
+
+Simplify how your team works today.
+Get Started
+
+Home
+Pricing
+Products
+About Us
+Careers
+Community
+Privacy Policy
+
+Updates in your inbox…
+Go
+
+Copyright 2020. All Rights Reserved
+
+
+<div class=" attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+          </div> -->
