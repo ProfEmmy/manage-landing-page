@@ -84,9 +84,9 @@ body {
     display: flex;
     justify-content: center;
     background-image: url("images\\bg-tablet-pattern.svg");
-    background-size: 120%;
+    background-size: 140%;
     background-repeat: no-repeat;
-    background-position: -70% -70%;
+    background-position: -40% -120%;
 }
 
 .nav-div {
@@ -122,6 +122,8 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .hero-txt {
@@ -170,14 +172,14 @@ body {
     height: 50%;
     border-radius: 5px;
     box-shadow: 0px 10px 100px hsl(0, 0%, 0%, .3);
-    animation: slideIn .8s linear;
+    animation: slideIn .45s linear;
 }
 
 .navigator {
     display: flex;
     flex-direction: column;
     text-align: center;
-    animation: comeIn .8s .5s linear both;
+    animation: comeIn .45s .3s linear both;
 }
 
 .navigator>a {
@@ -197,11 +199,11 @@ body {
 }
 
 .remove-nav-div {
-    animation: slideOut .8s linear both;
+    animation: slideOut .45s linear both;
 }
 
 .remove-nav {
-    animation: comeOut .4s linear both;
+    animation: comeOut .2s linear both;
 }
 
 .about-hero-div {
@@ -224,7 +226,7 @@ body {
     display: grid;
     grid-template-columns: 17vw auto;
     margin-left: 5vw;
-    margin-top: 10vw;
+    margin-top: 12vh;
 }
 
 .about-id {
@@ -257,6 +259,8 @@ body {
     text-align: center;
     color: hsl(228, 39%, 23%);
     font-size: 2.2em;
+    margin-top: 12vh;
+    margin-bottom: 7vh;
 }
 
 .testimonials {
@@ -312,7 +316,7 @@ body {
     border: 1.9px solid hsl(12, 88%, 59%);
     border-radius: 50%;
     width: 3vw;
-    height: 1.3vh;
+    height: 1vh;
     margin-right: 10%;
 }
 
