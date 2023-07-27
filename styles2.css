@@ -70,6 +70,24 @@
     }
 }
 
+@keyframes mark {
+    0% {
+        background-color: hsl(12, 88%, 59%);
+    }
+
+    2% {
+        background-color: none;
+    }
+
+    50% {
+        background-color: none;
+    }
+
+    100% {
+        background-color: none;
+    }
+}
+
 .desktop-div {
     display: none;
 }
@@ -338,8 +356,20 @@ body {
     margin-right: 10%;
 }
 
-.active-marker {
-    background-color: hsl(12, 88%, 59%);
+.marker1 {
+    animation: mark 6s infinite 0s alternate forwards;
+}
+
+.marker2 {
+    animation: mark 6s infinite 2s alternate forwards;
+}
+
+.marker3 {
+    animation: mark 6s infinite 4s alternate forwards;
+}
+
+.marker4 {
+    animation: mark 6s infinite 6s alternate forwards;
 }
 
 .get-startedbtn-div {
