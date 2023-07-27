@@ -259,7 +259,7 @@ body {
     color: hsl(228, 39%, 23%);
     margin-top: 10px;
     margin-left: 5vw;
-    font-size: 1.08em;
+    font-size: 1.02em;
 }
 
 .about-subtxt {
@@ -295,9 +295,9 @@ body {
 
 .avatar-img {
     width: 27%;
-    height: 17vh;
+    height: 14vh;
     position: absolute;
-    margin-top: -20vh;
+    margin-top: -18vh;
     margin-left: -12vw;
 }
 
