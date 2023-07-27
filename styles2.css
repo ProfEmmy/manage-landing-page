@@ -86,7 +86,14 @@ body {
     background-image: url("images\\bg-tablet-pattern.svg");
     background-size: 140%;
     background-repeat: no-repeat;
-    background-position: -40% -120%;
+    background-position: -20% -90%;
+}
+
+.nav-about {
+    background-image: url("images\\bg-tablet-pattern.svg");
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: -440% 32%;
 }
 
 .nav-div {
@@ -217,8 +224,13 @@ body {
 
 .about-hero-subtxt {
     margin-top: 15px;
+    margin-bottom: 10vh;
     line-height: 23px;
     color: hsl(227, 12%, 61%);
+}
+
+.first-about {
+    margin-top: 12vh;
 }
 
 .about-txts-div {
@@ -226,7 +238,9 @@ body {
     display: grid;
     grid-template-columns: 17vw auto;
     margin-left: 5vw;
-    margin-top: 12vh;
+    margin-top: 7vh;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .about-id {
@@ -259,8 +273,8 @@ body {
     text-align: center;
     color: hsl(228, 39%, 23%);
     font-size: 2.2em;
-    margin-top: 12vh;
-    margin-bottom: 7vh;
+    margin-top: 15vh;
+    margin-bottom: 17vh;
 }
 
 .testimonials {
@@ -271,7 +285,7 @@ body {
 
 .mobile-testimony {
     width: 90%;
-    height: 50vh;
+    height: 45vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -281,7 +295,10 @@ body {
 
 .avatar-img {
     width: 27%;
-    height: 25%;
+    height: 17vh;
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: -12vw;
 }
 
 .name {
@@ -298,12 +315,13 @@ body {
 }
 
 .slide {
-    animation: slide 10s infinite both;
+    animation: slide 10s ease-in-out infinite both;
 }
 
 .markers-div {
     display: flex;
     justify-content: center;
+    padding-top: 5vh;
 }
 
 .markers {
