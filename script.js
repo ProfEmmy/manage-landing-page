@@ -66,3 +66,60 @@ subscribe_form.addEventListener("submit", e => {
         error_p.style.display = "none"
     }
 })
+
+const mobile_subscribe_form = document.querySelector("#mobile-subscribe-form")
+const mobile_email_field = document.querySelector(".mobile-email-field")
+const mobile_error_p = document.querySelector(".mobile_error_p")
+
+mobile_subscribe_form.addEventListener("submit", e => {
+    e.preventDefault()
+
+    let value = mobile_email_field.value
+    if (value.includes("/") || !(value.includes("@")) || !(value.includes("."))) {
+        mobile_email_field.classList.add("error")
+        mobile_error_p.style.display = "block"
+        mobile_error_p.innerText = "Please insert a valid email"
+    } else {
+        mobile_email_field.classList.remove("error")
+        mobile_error_p.innerText = ""
+        mobile_email_field.value = ""
+        mobile_error_p.style.display = "none"
+    }
+})
+
+// Disable scrolling on the x-axis
+function disableXScroll() {
+    // For standard-compliant browsers
+    if (window.addEventListener) {
+        window.addEventListener("scroll", preventXScroll, { passive: false });
+    }
+    // For older versions of IE (before IE9)
+    else {
+        window.attachEvent("onscroll", preventXScroll);
+    }
+}
+
+// Enable scrolling on the x-axis
+function enableXScroll() {
+    // For standard-compliant browsers
+    if (window.removeEventListener) {
+        window.removeEventListener("scroll", preventXScroll, { passive: false });
+    }
+    // For older versions of IE (before IE9)
+    else {
+        window.detachEvent("onscroll", preventXScroll);
+    }
+}
+
+// Prevent default scrolling behavior on the x-axis
+function preventXScroll(event) {
+    event.preventDefault();
+    // Set the scroll position to its previous state, effectively preventing horizontal scrolling
+    window.scrollTo(window.scrollX, window.scrollY);
+}
+
+// Call the disableXScroll function to disable x-axis scrolling when needed
+disableXScroll();
+
+  // Call the enableXScroll function to enable x-axis scrolling when needed
+  // enableXScroll();
