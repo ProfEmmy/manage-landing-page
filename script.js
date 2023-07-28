@@ -87,35 +87,34 @@ mobile_subscribe_form.addEventListener("submit", e => {
     }
 })
 
-// Disable scrolling on the x-axis
+// Check if the current device is a mobile or tablet
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Disable scrolling on the x-axis for mobile devices
 function disableXScroll() {
-    // For standard-compliant browsers
-    if (window.addEventListener) {
+    if (isMobileDevice()) {
+        document.addEventListener("touchmove", preventXScroll, { passive: false });
+    } else {
+        // For non-mobile devices, use the previous method to disable x-axis scrolling
         window.addEventListener("scroll", preventXScroll, { passive: false });
     }
-    // For older versions of IE (before IE9)
-    else {
-        window.attachEvent("onscroll", preventXScroll);
-    }
 }
 
-// Enable scrolling on the x-axis
+// Enable scrolling on the x-axis for mobile devices
 function enableXScroll() {
-    // For standard-compliant browsers
-    if (window.removeEventListener) {
+    if (isMobileDevice()) {
+        document.removeEventListener("touchmove", preventXScroll, { passive: false });
+    } else {
+        // For non-mobile devices, use the previous method to enable x-axis scrolling
         window.removeEventListener("scroll", preventXScroll, { passive: false });
     }
-    // For older versions of IE (before IE9)
-    else {
-        window.detachEvent("onscroll", preventXScroll);
-    }
 }
 
-// Prevent default scrolling behavior on the x-axis
+// Prevent default scrolling behavior on the x-axis for mobile devices
 function preventXScroll(event) {
     event.preventDefault();
-    // Set the scroll position to its previous state, effectively preventing horizontal scrolling
-    window.scrollTo(window.scrollX, window.scrollY);
 }
 
 // Call the disableXScroll function to disable x-axis scrolling when needed
