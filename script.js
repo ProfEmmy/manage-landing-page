@@ -114,7 +114,13 @@ function enableXScroll() {
 
 // Prevent default scrolling behavior on the x-axis for mobile devices
 function preventXScroll(event) {
-    event.preventDefault();
+    const xScroll = window.scrollX;
+    const yScroll = window.scrollY;
+
+    // If the scroll position changes along the x-axis, reset it to the previous value
+    if (xScroll !== window.scrollX) {
+        window.scrollTo(xScroll, yScroll);
+    }
 }
 
 // Call the disableXScroll function to disable x-axis scrolling when needed
