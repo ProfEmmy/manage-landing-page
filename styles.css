@@ -251,6 +251,11 @@ body {
     margin-right: 20px;
     font-weight: 500;
     font-size: .9em;
+    transition: all .3s;
+}
+
+.navs>a:hover {
+    color: hsl(227, 12%, 61%);
 }
 
 .getstarted-div {
@@ -259,13 +264,19 @@ body {
 
 .get-started {
     background-color: hsl(12, 88%, 59%);
-    box-shadow: 0px 5px 7px hsl(12, 88%, 59%, .3);
+    box-shadow: 0px 3px 20px hsl(12, 88%, 59%, .3);
     cursor: pointer;
     border: 0px;
     color: white;
     width: 140px;
     height: 40px;
     border-radius: 50px;
+    transition: all .5s;
+}
+
+.get-started:hover {
+    background-color: hsl(12, 88%, 59%, .6);
+    color: hsl(0, 0%, 98%);
 }
 
 .hero-div {
@@ -446,14 +457,6 @@ body {
     animation: slide8 10s ease-in-out infinite;
 }
 
-/* .slide {
-    animation: slide 10s ease-in-out infinite;
-    animation-name: slide;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-} */
-
 .avatar-img {
     width: 90px;
     height: 90px;
@@ -512,10 +515,16 @@ body {
     width: 150px;
     height: 50px;
     border-radius: 50px;
-    box-shadow: 0px 5px 7px hsl(12, 88%, 59%, .3);
+    box-shadow: 0px 5px 20px hsl(12, 88%, 59%, .3);
     cursor: pointer;
     margin-top: 60px;
     margin-bottom: 60px;
+    transition: all .5s;
+}
+
+.get-started-btn:hover {
+    background-color: hsl(12, 88%, 59%, .6);
+    color: hsl(0, 0%, 98%);
 }
 
 .simplify-section {
@@ -559,6 +568,11 @@ body {
     border-radius: 50px;
     font-weight: 700;
     cursor: pointer;
+    transition: all .5s;
+}
+
+.simplify-btn:hover {
+    color: hsl(12, 88%, 59%, .5);
 }
 
 .footer-section {
@@ -594,6 +608,12 @@ body {
 
 .socials>img {
     margin-left: 6px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.socials>img:hover {
+    filter: invert(40%) sepia(90%) saturate(696%) hue-rotate(332deg) brightness(98%) contrast(93%);
 }
 
 img[alt="icon-facebook"] {
@@ -610,6 +630,12 @@ img[alt="icon-facebook"] {
     text-decoration: none;
     font-size: .9em;
     color: hsl(0, 0%, 98%);
+    width: 8vw;
+    transition: all .3s;
+}
+
+.sitemap>a:hover {
+    color: hsl(12, 88%, 59%);
 }
 
 .first-map {
@@ -644,15 +670,21 @@ img[alt="icon-facebook"] {
     font-weight: 700;
     margin-left: 7px;
     cursor: pointer;
+    transition: all .5s;
+}
+
+#go:hover {
+    filter: contrast(60%);
+    color: hsl(0, 0%, 98%);
 }
 
 .error {
-    color: rgb(255, 26, 26);
-    border: 1px solid rgb(255, 26, 26);
+    color: hsl(12, 88%, 59%);
+    border: 1px solid hsl(12, 88%, 59%);
 }
 
 .error_p {
-    color: rgb(255, 26, 26);
+    color: hsl(12, 88%, 59%);
     margin-right: 0;
     margin-left: 2vw;
     margin-top: 7px;
