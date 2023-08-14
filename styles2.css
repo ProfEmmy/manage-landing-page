@@ -294,8 +294,9 @@ body {
 
 .testimonials {
     display: grid;
-    grid-template-columns: 100% 100% 100% 100% 100%;
+    grid-template-columns: 100vw 100vw 100vw 100vw 100vw;
     justify-items: center;
+    width: 100vw;
 }
 
 .mobile-testimony {
