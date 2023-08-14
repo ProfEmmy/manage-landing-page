@@ -91,6 +91,11 @@
 body {
     margin: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
     overflow-x: hidden;
 }
 
