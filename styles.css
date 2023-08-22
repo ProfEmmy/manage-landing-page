@@ -220,7 +220,6 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
-    height: 100vh;
     background-image: url("images\\bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: 130% 197%;
@@ -419,7 +418,7 @@ body {
     text-align: center;
     width: 40vw;
     background-color: hsl(0, 0%, 98%);
-    height: 30vh;
+    height: 195.3px;
     margin-right: 3vw;
     transform: translateX(-13vw);
     transition: transform .6s;
@@ -461,11 +460,11 @@ body {
     width: 90px;
     height: 90px;
     position: absolute;
-    margin-top: -6vh;
+    margin-top: -39.1px;
 }
 
 .testimony-name {
-    height: 27vh;
+    height: 175.77px;
     display: flex;
     align-items: end;
     text-align: center;
@@ -529,7 +528,7 @@ body {
 
 .simplify-section {
     width: 100vw;
-    height: 30vh;
+    height: 195.3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,14 +580,14 @@ body {
     align-items: center;
     background-color: hsl(233, 12%, 13%);
     width: 100vw;
-    height: 35vh;
+    height: 227.85px;
     margin-bottom: 0;
 }
 
 .footer-div {
     width: 75vw;
     display: grid;
-    grid-template-columns: 17vw 17vw 17vw auto;
+    grid-template-columns: 232.22px 232.22px 232.22px auto;
 }
 
 .footer-logo {
